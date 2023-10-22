@@ -25,11 +25,3 @@ fn string_uppercase(data: String) {
     let data = data.to_uppercase();
     println!("{}", data);
 }
-
-
-// Should take ownership
-fn string_uppercase(mut data: &String) {
-    data = &data.to_uppercase();
-
-    println!("{}", data);
-}
